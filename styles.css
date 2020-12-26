@@ -1,3 +1,13 @@
+/* Master styles */
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -11,7 +21,6 @@
 .nav-wrapper > .left-side > div {
     margin-right: 20px;
     font-size: 0.9rem;
-    text-transform: uppercase;
 }
 
 .nav-link-wrapper {
@@ -32,4 +41,23 @@
 
 .nav-link-wrapper a:hover {
     color: black;
+}
+
+/*Portfolio styles */
+
+.portfolio-item-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
