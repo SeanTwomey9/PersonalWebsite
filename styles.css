@@ -97,7 +97,7 @@ body {
 }
 .img-text-wrapper:hover .subtitle {
   font-weight: 600;
-  color: lightseagreen;
+  color: dodgerblue;
 }
 
 .img-darken {
@@ -120,5 +120,5 @@ body {
 }
 
 .profile-content-wrapper h1 {
-  color: lightseagreen;
+  color: dodgerblue;
 }
