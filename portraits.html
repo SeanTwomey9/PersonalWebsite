@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portaits</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="nav-wrapper">
+          <div class="left-side">
+            <div class="nav-link-wrapper">
+              <a href="index.html"> Home</a>
+            </div>
+  
+            <div class="nav-link-wrapper active-nav-link">
+              <a href="about.html"> About</a>
+            </div>
+          </div>
+  
+          <div class="right-side">
+            <div class="brand">SEAN TWOMEY</div>
+          </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+              <div class="portfolio-item-wrapper">
+                <div
+                  class="portfolio-img-background"
+                  style="
+                    background-image: url(images/Chris_Headshot3_9_26_20\ copy.jpg);
+                  "
+                ></div>
+    
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/camera.png" alt="" />
+                  </div>
+                  <div class="subtitle">Chris</div>
+                </div>
+              </div>
+    
+              <div class="portfolio-item-wrapper">
+                <div
+                  class="portfolio-img-background"
+                  style="
+                    background-image: url(images/Caitlyn_Headshot_10_31_20-5\ copy.jpeg);
+                  "
+                ></div>
+    
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/camera.png" alt="" />
+                  </div>
+    
+                  <div class="subtitle">Caitlyn</div>
+                </div>
+              </div>
+    
+              <div class="portfolio-item-wrapper">
+                <div
+                  class="portfolio-img-background"
+                  style="
+                    background-image: url(images/Sunayana_Shots_11_8_20-3\ copy.jpeg);
+                  "
+                ></div>
+    
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/camera.png" alt="" />
+                  </div>
+    
+                  <div class="subtitle">Sunayana</div>
+                </div>
+              </div>
+    
+              <div class="portfolio-item-wrapper">
+                <div
+                  class="portfolio-img-background"
+                  style="
+                    background-image: url(images/Workstation_11_18_20\ copy.jpg);
+                  "
+                ></div>
+    
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/camera.png" alt="" />
+                  </div>
+    
+                  <div class="subtitle">
+                    I aspire to become a front end developer, possibly an app or web
+                    developer.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+      <script>
+        const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+    
+        portfolioItems.forEach((portfolioItem) => {
+          portfolioItem.addEventListener("mouseover", () => {
+            portfolioItem.childNodes[1].classList.add("img-darken");
+          });
+    
+          portfolioItem.addEventListener("mouseout", () => {
+            portfolioItem.childNodes[1].classList.remove("img-darken");
+          });
+        });
+      </script>
+  </body>
+</html>

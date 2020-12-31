@@ -88,6 +88,13 @@ body {
 .logo-wrapper img {
   width: 50%;
   margin-bottom: 20px;
+  opacity: 0;
+}
+
+.img-text-wrapper:hover .logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+  opacity: 100;
 }
 
 .img-text-wrapper .subtitle {
