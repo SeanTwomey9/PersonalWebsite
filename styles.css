@@ -1,5 +1,6 @@
 /* Master styles */
 body {
+  font-family: "Ubuntu", sans-serif;
   margin: 0px;
 }
 
@@ -42,6 +43,14 @@ body {
 
 .nav-link-wrapper a:hover {
   color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
 }
 
 /*Portfolio styles */
