@@ -34,27 +34,39 @@
       </div>
 
       <div class="content-wrapper">
-        <div class="two-column-wrapper">
-          <div class="profile-image-wrapper">
-            <img src="images/Sean_Headshot_10_2_20.jpg" />
-          </div>
+        <div class="contact-form">
+          <form id="contact-form" method="POST" action="">
+            <input
+              name="name"
+              type="text"
+              class="form-control"
+              placeholder="Your Name"
+              required
+            />
+            <br />
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="Your Email"
+              required
+            />
+            <br />
+            <textarea
+              name="message"
+              class="for-control"
+              placeholder="Message"
+              row="4"
+              required
+            ></textarea>
+            <br />
 
-          <div class="profile-content-wrapper">
-            <h1>
-              Contact information:
-              <p>
-                My name is Sean Twomey and I am a senior at
-                <a href="https://www.case.edu"
-                  >Case Western Reserve University</a
-                >
-                pursuing a B.S. in Computer Science. I aspire to work in the
-                tech industry and am open to roles pertaining to software
-                engineering, data science, and cybersecurity. I am also
-                beginning as a photographer and enjoy shooting portraits,
-                landscape, and animals.
-              </p>
-            </h1>
-          </div>
+            <input
+              type="submit"
+              class="form-control submit"
+              value="Send Message"
+            />
+          </form>
         </div>
       </div>
     </div>
