@@ -123,14 +123,32 @@ body {
 }
 
 .profile-content-wrapper {
+  margin-top: 100px;
+  color: dodgerblue;
   padding: 30px;
+  transition: all 4s ease-in-out;
 }
 
 .profile-content-wrapper h1 {
-  color: dodgerblue;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 10px;
 }
 
 /*Contact form styles*/
+
+.contact-title {
+  margin-top: 100px;
+  color: dodgerblue;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+
+.contact-title h1 {
+  font-size: 32px;
+  line-height: 10px;
+}
+
 form {
   margin-top: 50px;
   transition: all 4s ease-in-out;
