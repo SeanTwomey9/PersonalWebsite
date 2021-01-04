@@ -107,6 +107,10 @@ body {
   color: dodgerblue;
 }
 
+.img-text-wrapper:hover .subtitle:active {
+  color: transparent;
+}
+
 .img-darken {
   transition: 1s;
   filter: brightness(10%);
