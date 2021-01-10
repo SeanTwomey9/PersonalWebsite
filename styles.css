@@ -56,6 +56,38 @@ body {
 
 /*Portfolio styles */
 
+.welcome span {
+  display: block;
+}
+.text1 {
+  color: black;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: lightblue;
+  position: relative;
+  animation: text 3s 1;
+  text-transform: uppercase;
+}
+.text2 {
+  color: black;
+  font-size: 30px;
+}
+@keyframes text {
+  0% {
+    color: lightblue;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
 .portfolio-items-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
