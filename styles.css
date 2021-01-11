@@ -60,7 +60,7 @@ body {
   display: block;
 }
 .text1 {
-  color: black;
+  color: darkblue;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: 8px;
@@ -170,13 +170,33 @@ body {
   font-size: 32px;
   text-transform: uppercase;
   line-height: 10px;
+  color: darkblue;
+}
+
+.work-experience h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: darkblue;
+}
+
+.work-experience h2 {
+  font-size: 30px;
+  color: darkblue;
+}
+
+.work-experience p {
+  font-size: 20px;
+}
+
+.work-experience ul {
+  font-size: 20px;
 }
 
 /*Contact form styles*/
 
 .contact-title {
   margin-top: 100px;
-  color: dodgerblue;
+  color: darkblue;
   text-transform: uppercase;
   transition: all 4s ease-in-out;
 }
@@ -184,6 +204,10 @@ body {
 .contact-title h1 {
   font-size: 32px;
   line-height: 10px;
+}
+
+.contact-title p {
+  font-size: 20px;
 }
 
 form {
