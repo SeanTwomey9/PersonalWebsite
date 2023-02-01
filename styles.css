@@ -130,6 +130,18 @@ body {
   opacity: 100;
 }
 
+.logo-wrapper a {
+  width: 50%;
+  margin-bottom: 20px;
+  opacity: 0;
+}
+
+.img-text-wrapper:hover .logo-wrapper a {
+  width: 50%;
+  margin-bottom: 20px;
+  opacity: 100;
+}
+
 .img-text-wrapper .subtitle {
   transition: 1s;
   font-weight: 600;
