@@ -35,6 +35,7 @@
 
       <div class="content-wrapper">
         <div class="portfolio-items-wrapper">
+
           <div class="portfolio-item-wrapper">
             <div
               class="portfolio-img-background"
@@ -42,14 +43,8 @@
                 background-image: url(sunayana/Sunayana_Shots_11_8_20-3\ copy.jpeg);
               "
             ></div>
-
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/camera3.png" alt="" />
-              </div>
-              <div class="subtitle">Sunayana #1</div>
-            </div>
           </div>
+
           <div class="portfolio-item-wrapper">
             <div
               class="portfolio-img-background"
@@ -57,13 +52,6 @@
                 background-image: url(sunayana/Sunayana_Shots_11_8_20-4\ copy.jpeg);
               "
             ></div>
-
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/camera3.png" alt="" />
-              </div>
-              <div class="subtitle">Sunayana #2</div>
-            </div>
           </div>
 
           <div class="portfolio-item-wrapper">
@@ -73,13 +61,6 @@
                 background-image: url(sunayana/Sunayana_Shots_11_8_20-2\ copy.jpeg);
               "
             ></div>
-
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/camera3.png" alt="" />
-              </div>
-              <div class="subtitle">Sunayana #3</div>
-            </div>
           </div>
 
           <div class="portfolio-item-wrapper">
@@ -89,28 +70,10 @@
                 background-image: url(sunayana/Sunayana_Shots_11_8_20-5\ copy.jpeg);
               "
             ></div>
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/camera3.png" alt="" />
-              </div>
-              <div class="subtitle">Sunayana #4</div>
-            </div>
           </div>
+
         </div>
       </div>
     </div>
   </body>
-  <script>
-    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
-
-    portfolioItems.forEach((portfolioItem) => {
-      portfolioItem.addEventListener("mouseover", () => {
-        portfolioItem.childNodes[1].classList.add("img-darken");
-      });
-
-      portfolioItem.addEventListener("mouseout", () => {
-        portfolioItem.childNodes[1].classList.remove("img-darken");
-      });
-    });
-  </script>
 </html>
