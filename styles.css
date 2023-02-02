@@ -93,6 +93,11 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.portfolio-two-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .portfolio-item-wrapper {
   position: relative;
 }
@@ -133,6 +138,37 @@ body {
 }
 
 .img-text-wrapper:hover .subtitle:active {
+  color: transparent;
+}
+
+.two-img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.two-img-text-wrapper .subtitle {
+  font-weight: 600;
+  color: transparent;
+  opacity: 0;
+}
+
+.two-img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: dodgerblue;
+  padding-left: 200px;
+  padding-right: 100px;
+  opacity: 100;
+}
+
+.two-img-text-wrapper:hover .subtitle:active {
   color: transparent;
 }
 
