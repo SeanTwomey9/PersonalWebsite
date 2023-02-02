@@ -118,38 +118,18 @@ body {
   padding-right: 100px;
 }
 
-.logo-wrapper img {
-  width: 50%;
-  margin-bottom: 20px;
-  opacity: 0;
-}
-
-.img-text-wrapper:hover .logo-wrapper img {
-  width: 50%;
-  margin-bottom: 20px;
-  opacity: 100;
-}
-
-.logo-wrapper a {
-  width: 50%;
-  margin-bottom: 20px;
-  opacity: 0;
-}
-
-.img-text-wrapper:hover .logo-wrapper a {
-  width: 50%;
-  margin-bottom: 20px;
-  opacity: 100;
-}
-
 .img-text-wrapper .subtitle {
-  transition: 1s;
   font-weight: 600;
   color: transparent;
+  opacity: 0;
 }
+
 .img-text-wrapper:hover .subtitle {
   font-weight: 600;
   color: dodgerblue;
+  padding-left: 100px;
+  padding-right: 100px;
+  opacity: 100;
 }
 
 .img-text-wrapper:hover .subtitle:active {
