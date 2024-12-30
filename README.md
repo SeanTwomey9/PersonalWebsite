@@ -6,7 +6,7 @@ Hello, my name is Sean Twomey and welcome to my personal website. I am a twenty-
 
 ## Website Organization
 
-[www.seanpatricktwomey.com](htps://www.seanpatricktwomey.com) is divided up into the following five high-level webpages, some of which have additional sub-pages. All five webpages are represented as hyperlinks on the navigation bar, which is present on every webpage.  My name is also located in the top-right corner of each webpage.
+[www.seanpatricktwomey.com](https://www.seanpatricktwomey.com) is divided up into the following five high-level webpages, some of which have additional sub-pages. All five webpages are represented as hyperlinks on the navigation bar, which is present on every webpage.  My name is also located in the top-right corner of each webpage.
 
 ### Home
 
