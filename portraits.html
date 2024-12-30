@@ -11,7 +11,10 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- Script for tile mouseover and mouseout effects -->
+    <script src="mouseover_mouseout_tile.js" defer></script>
   </head>
+  
   <body>
     <div class="container">
       <div class="nav-wrapper">
@@ -229,18 +232,5 @@
           </div>
         </div>
       </div>
-      <script>
-        const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
-    
-        portfolioItems.forEach((portfolioItem) => {
-          portfolioItem.addEventListener("mouseover", () => {
-            portfolioItem.childNodes[1].classList.add("img-darken");
-          });
-    
-          portfolioItem.addEventListener("mouseout", () => {
-            portfolioItem.childNodes[1].classList.remove("img-darken");
-          });
-        });
-      </script>
   </body>
 </html>

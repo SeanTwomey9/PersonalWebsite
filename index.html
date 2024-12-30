@@ -2,20 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Sean Twomey's Portfolio</title>
+    <!-- Title shown when user hovers over the tab and title bar -->
+    <title>Sean Twomey's Personal Website</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"/>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- Script for tile mouseover and mouseout effects -->
+    <script src="mouseover_mouseout_tile.js" defer></script>
   </head>
 
   <body>
     <div class="container">
       <div class="nav-wrapper">
         <div class="left-side">
+
+          <!-- active-nav-link style used to underline current page on navigation bar -->
           <div class="nav-link-wrapper active-nav-link">
             <a href="index.html"> Home</a>
           </div>
@@ -35,22 +37,23 @@
           <div class="nav-link-wrapper">
             <a href="contact.html">Contact</a>
           </div>
+
         </div>
 
         <div class="right-side">
           <div class="brand"><strong>SEAN TWOMEY</strong></div>
         </div>
+
       </div>
 
       <div class="welcome">
         <span class="text1">Hi, my name is Sean.</span>
-        <span class="text2"
-          >Welcome to my website. Hover over an image and select the icon to
-          have a look at my work!</span
-        >
+        <span class="text2">Welcome to my website. Hover over an image and select the hyperlink to have a look at my work!</span>
       </div>
+
       <br />
       <br />
+
       <div class="content-wrapper">
         <div class="portfolio-two-items-wrapper">
           <div class="portfolio-item-wrapper">
@@ -85,17 +88,4 @@
       </div>
     </div>
   </body>
-  <script>
-    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
-
-    portfolioItems.forEach((portfolioItem) => {
-      portfolioItem.addEventListener("mouseover", () => {
-        portfolioItem.childNodes[1].classList.add("img-darken");
-      });
-
-      portfolioItem.addEventListener("mouseout", () => {
-        portfolioItem.childNodes[1].classList.remove("img-darken");
-      });
-    });
-  </script>
 </html>
