@@ -1,3 +1,0 @@
--if i was in charge i would put work experience as separate from photography and then have portraits/landscape/close up as folders within photography
--and maybe i would add the photography and work experience as tabs to the top of the website 
--Centered text becomes uncentered when page is moved to a larger monitor.
