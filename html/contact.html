@@ -2,14 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Contact</title>
+    <title>Contact Me</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"/>
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
   <body>
@@ -17,7 +13,7 @@
       <div class="nav-wrapper">
         <div class="left-side">
           <div class="nav-link-wrapper">
-            <a href="index.html"> Home</a>
+            <a href="../index.html"> Home</a>
           </div>
 
           <div class="nav-link-wrapper">
@@ -32,8 +28,9 @@
             <a href="about.html"> About</a>
           </div>
 
+          <!-- active-nav-link style used to underline current page of Contact Me -->
           <div class="nav-link-wrapper active-nav-link">
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Me</a>
           </div>
         </div>
 
@@ -48,20 +45,22 @@
         </div>
         <br />
         <p>
-          If you are interested in portraits, professional headshots for social
-          media, special occasions, or anything I can make happen with my Nikon
+          If you are interested in portraits, professional headshots, special occasions, or anything I can make happen with my Nikon
           please fill out the form below or shoot me an
           <a href="mailto: seanptwomey99@gmail.com">email</a>! Price is
-          negotiable, and editing will be included. Also do reach out for any
+          negotiable. Also do reach out for any
           other non-photography matters, or feel free to connect with me on
-          <a href="about.html">social media </a>. Thank you for visiting my site
+          <a href="about.html">social media </a>. Thank you for visiting my website
           and have a great day!
+
         </p>
+        
+        <!-- Create form fields using POST method and liking to PHP form-->
         <div class="contact-form">
           <form
             id="contact-form"
             method="POST"
-            action="contact-form-handler.php"
+            action="../php/contact-form-handler.php"
           >
             <input
               name="name"

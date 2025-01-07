@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"/>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Script for tile mouseover and mouseout effects -->
+    <script src="../javascript/mouseover_mouseout_tile.js" defer></script>
   </head>
+
   <body>
     <div class="container">
       <div class="nav-wrapper">
         <div class="left-side">
           <div class="nav-link-wrapper">
-            <a href="index.html"> Home</a>
+            <a href="../index.html"> Home</a>
           </div>
 
           <div class="nav-link-wrapper">
@@ -33,7 +32,7 @@
           </div>
 
           <div class="nav-link-wrapper">
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Me</a>
           </div>
         </div>
 
@@ -48,7 +47,7 @@
             <div
               class="portfolio-img-background"
               style="
-                background-image: url(images/Hilton_Head_Beach_8_10_20\ copy.jpg);
+                background-image: url(../images/nature/Hilton_Head_Beach_8_10_20_copy.jpg);
               "
             ></div>
             <div class="img-text-wrapper">
@@ -60,7 +59,7 @@
             <div
               class="portfolio-img-background"
               style="
-                background-image: url(images/Birds_Landscape_8_12_20\ copy.jpg);
+                background-image: url(../images/nature/Birds_Landscape_8_12_20_copy.jpg);
               "
             ></div>
             <div class="img-text-wrapper">
@@ -72,7 +71,7 @@
             <div
               class="portfolio-img-background"
               style="
-                background-image: url(images/Dolphin_Submerged__Hilton_Head_Boat_8_12_20\ copy.jpg);
+                background-image: url(../images/nature/Dolphin_Submerged__Hilton_Head_Boat_8_12_20_copy.jpg);
               "
             ></div>
             <div class="img-text-wrapper">
@@ -84,7 +83,7 @@
             <div
               class="portfolio-img-background"
               style="
-                background-image: url(images/Lions_sleeping_safari_12_22_20\ copy.jpg);
+                background-image: url(../images/nature/Lions_sleeping_safari_12_22_20_copy.jpg);
               "
             ></div>
             <div class="img-text-wrapper">
@@ -96,7 +95,7 @@
             <div
               class="portfolio-img-background"
               style="
-                background-image: url(images/Squirrel1_Cleveland_10_2_20\ copy.jpg);
+                background-image: url(../images/nature/Squirrel1_Cleveland_10_2_20_copy.jpg);
               "
             ></div>
             <div class="img-text-wrapper">
@@ -108,7 +107,7 @@
             <div
               class="portfolio-img-background"
               style="
-                background-image: url(images/pond_sunset_12_12_20-2\ copy.jpg);
+                background-image: url(../images/nature/pond_sunset_12_12_20-2_copy.jpg);
               "
             ></div>
             <div class="img-text-wrapper">
@@ -118,19 +117,5 @@
         </div>
       </div>
     </div>
-  </body>
-  <script>
-    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
-
-    portfolioItems.forEach((portfolioItem) => {
-      portfolioItem.addEventListener("mouseover", () => {
-        portfolioItem.childNodes[1].classList.add("img-darken");
-      });
-
-      portfolioItem.addEventListener("mouseout", () => {
-        portfolioItem.childNodes[1].classList.remove("img-darken");
-      });
-    });
-  </script>
   </body>
 </html>

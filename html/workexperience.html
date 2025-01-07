@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work Experience</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"/>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Script for tile mouseover and mouseout effects -->
+    <script src="../javascript/mouseover_mouseout_tile.js" defer></script>
   </head>
+
   <body>
     <div class="container">
       <div class="nav-wrapper">
         <div class="left-side">
+
           <div class="nav-link-wrapper">
-            <a href="index.html"> Home</a>
+            <a href="../index.html"> Home</a>
           </div>
 
+          <!-- active-nav-link style used to underline current page of Work Experience -->
           <div class="nav-link-wrapper active-nav-link">
             <a href="workexperience.html">Work Experience</a>
           </div>
@@ -33,7 +34,7 @@
           </div>
 
           <div class="nav-link-wrapper">
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Me</a>
           </div>
         </div>
 
@@ -48,7 +49,7 @@
           <div class="portfolio-item-wrapper">
             <div
               class="portfolio-img-background"
-              style="background-image: url(images/allstate_logo.jpeg)"
+              style="background-image: url(../images/company_logos/allstate_logo.jpg)"
             ></div>
 
             <div class="img-text-wrapper">
@@ -60,7 +61,7 @@
 
               <div class="portfolio-item-wrapper">
                 <div class="portfolio-img-background"
-                style="background-image: url(images/textron_systems_small.png)" >
+                style="background-image: url(../images/company_logos/textron_systems_small.png)" >
                 </div>
 
                 <div class="img-text-wrapper">
@@ -72,7 +73,7 @@
 
               <div class="portfolio-item-wrapper">
                 <div class="portfolio-img-background"
-                style="background-image: url(images/bell_logo_3.png)" >
+                style="background-image: url(../images/company_logos/bell_logo_3.png)" >
                 </div>
 
                 <div class="img-text-wrapper">
@@ -86,17 +87,4 @@
       </div>
     </div>
   </body>
-  <script>
-    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
-
-    portfolioItems.forEach((portfolioItem) => {
-      portfolioItem.addEventListener("mouseover", () => {
-        portfolioItem.childNodes[1].classList.add("img-darken");
-      });
-
-      portfolioItem.addEventListener("mouseout", () => {
-        portfolioItem.childNodes[1].classList.remove("img-darken");
-      });
-    });
-  </script>
 </html>

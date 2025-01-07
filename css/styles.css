@@ -1,0 +1,372 @@
+/*** Master styles ***/
+
+/* Styling for overarching body attribute */
+body 
+{
+  /* Use sans serif font in body of pages */
+  font-family: "Ubuntu", sans-serif;
+  margin: 0px;
+
+  /* Use light blue as background color on all pages */
+  background-color: lightblue;
+}
+
+/* Styling for high-level attribute housing all HTML */
+.container 
+{
+  /* Set up container of pages to be a grid */
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Styling for attribute housing the navigation bar */
+.nav-wrapper 
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+/* Styling for left side of navigation bar containing high-level pages */
+.left-side 
+{
+  display: flex;
+}
+
+/* Styling for left side of navigation bar housed inside of divs */
+.nav-wrapper > .left-side > div 
+{
+  margin-right: 20px;
+
+  /* Make navigation bar high-level pages all capital */
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+/* Styling for each element in the navigation bar */
+.nav-link-wrapper 
+{
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+/* Styling for the text in each element in the navigation bar  */
+.nav-link-wrapper a 
+{
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+/* Styling for navigation bar elements when they're hovered over */
+.nav-link-wrapper:hover 
+{
+  border-bottom: 1px solid black;
+}
+
+/* Styling for text of navigation bar elements when they're hovered over */
+.nav-link-wrapper a:hover 
+{
+  color: black;
+}
+
+/* Styling used to represent the "active" navigation bar element depending on which page is being shown */
+.active-nav-link 
+{
+  border-bottom: 1px solid black;
+}
+
+/* Styling used for text of active navigation bar element */
+.active-nav-link a 
+{
+  color: black !important;
+}
+
+/*Portfolio styles */
+
+/* Styling for welcome text displayed on home page */
+.welcome span 
+{
+  display: block;
+}
+
+/* Styling for large all-caps text shown on welcome page */
+.text1 
+{
+  color: darkblue;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: lightblue;
+  position: relative;
+  animation: text 3.5s 1;
+  text-transform: uppercase;
+}
+
+/* Styling for additional text shown on welcome page */
+.text2 
+{
+  color: black;
+  font-size: 30px;
+}
+
+/* Styling used for welcome text animation */
+@keyframes text 
+{
+  0% 
+  {
+    color: lightblue;
+    margin-bottom: -40px;
+  }
+
+  30% 
+  {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+
+  85% 
+  {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+
+}
+
+/* Styling for three column tile format used on most pages */
+.portfolio-items-wrapper 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Styling for two column tile format used on some pages */
+.portfolio-two-items-wrapper 
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Styling used for overarching attribute housing the tile */
+.portfolio-item-wrapper 
+{
+  position: relative;
+}
+
+/* Styling for image used on tiles */
+.portfolio-img-background 
+{
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Styling for text overlayed on tiles */
+.img-text-wrapper 
+{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Styling for text on tiles when not hovered over */
+.img-text-wrapper .subtitle 
+{
+  font-weight: 600;
+  color: transparent;
+  opacity: 0;
+}
+
+/* Styling for text on tiles when hovered over */
+.img-text-wrapper:hover .subtitle 
+{
+  font-weight: 600;
+  color: dodgerblue;
+  padding-left: 100px;
+  padding-right: 100px;
+  opacity: 100;
+}
+
+/* Styling used for darkening of tiles when hovered over */ 
+.img-darken 
+{
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+/*** Work Experience pages styles ***/
+
+/* Styling used for company header text  */
+.work-experience h1 
+{
+  font-size: 50px;
+  text-transform: uppercase;
+  color: darkblue;
+}
+
+/* Styling used for title and dates of employment header text  */
+.work-experience h2 
+{
+  font-size: 30px;
+  color: darkblue;
+}
+
+/* Styling used for body text  */
+.work-experience p 
+{
+  font-size: 20px;
+}
+
+/* Styling used for bulleted list items  */
+.work-experience ul 
+{
+  font-size: 20px;
+}
+
+/* About Me page styles */
+
+/* Styling for profile picture  */
+.profile-image-wrapper img 
+{
+  width: 100%;
+}
+
+/* Styling used for all other content */
+.profile-content-wrapper 
+{
+  margin-top: 100px;
+  color: black;
+  padding: 30px;
+  transition: all 4s ease-in-out;
+}
+
+/* Styling used for "ABOUT ME" header text */
+.profile-content-wrapper h1 
+{
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 10px;
+  color: darkblue;
+}
+
+/*** Contact Me page styles ***/
+
+/* Styling used for Contact Me page header text*/
+.contact-title 
+{
+  margin-top: 100px;
+  color: darkblue;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+
+/* Additional styling used for Contact Me page header text */
+.contact-title h1 
+{
+  font-size: 32px;
+  line-height: 10px;
+}
+
+/* Styling used for paragraph text on Contact Me page */
+.contact-title p 
+{
+  font-size: 20px;
+}
+
+/* Overaching style used for contact form  */
+form 
+{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+/* Styling used for contact form fields */
+.form-control 
+{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+/* Styling used for input objects on contact form */
+input 
+{
+  height: 45px;
+}
+
+/* Styling used for Submit button */
+form .submit 
+{
+  background: #ff5722;
+  border-color: transparent;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+/* Styling used for Submit button when hovered over */
+form .submit:hover 
+{
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+/*Social media icon styles, credit to https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css */
+
+/* General styling used for social media buttons */
+.fa 
+{
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+/* Styling used for social media buttons when hovered over */
+.fa:hover 
+{
+  opacity: 0.7;
+}
+
+/* Styling used for Twitter icon*/
+.fa-twitter 
+{
+  background: #55ACEE;
+  color: white;
+}
+
+/* Styling used for LinkedIn button */
+.fa-linkedin 
+{
+  background: #007bb5;
+  color: white;
+}
+
+/* Styling used for Instagram icon */
+.fa-instagram 
+{
+  background: #125688;
+  color: white;
+}
